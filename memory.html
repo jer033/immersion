@@ -40,11 +40,10 @@ function addButton()
 {
     const newButton = document.createElement('button');
     newButton.classList.add("word");
-    newButton.dataset.id = button_number;
     newButton.textContent = words[index];
         
         newButton.addEventListener('click', () => {
-          runRound(newButton.dataset.id);
+          runRound(newButton);
         });
 
     buttons.push(newButton);
@@ -55,6 +54,9 @@ function addButton()
 
 function beginGame()
 {
+    for (const b of buttons)
+        b.remove();
+    buttons = [];
     //shuffle words
     let len = words.length;
     
@@ -77,9 +79,9 @@ function beginGame()
 
 }
 
-function runRound(given_number)
+function runRound(given_button)
 {
-    let given_answer = buttons[given_number].innerText;
+    let given_answer = given_button.innerText;
     if ((given_answer != correct_answer) && (correct_answer != "xxxxx"))
     {
         //delete all buttons and make the start button appear again
@@ -105,8 +107,8 @@ function runRound(given_number)
         //obtain all the words, replace one with a new one IF NO NEW BUTTON WAS ADDED, shuffle them
         correct_answer = buttons[button_number-1].innerText;
         
-        if (round > 0) {
-        let j = Math.floor(Math.random() * (button_number + 1));
+        if (throwaway) {
+        let j = Math.floor(Math.random() * (buttons.length));
         buttons[j].innerText = words[index];
         correct_answer = words[index];
         index++;
