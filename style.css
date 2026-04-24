@@ -61,27 +61,27 @@ button.word {
 }
 
 .navbar {
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgb(243, 88, 32);
-        overflow: hidden;
-        z-index: 1000; /* Keeps it above other content */
-    }
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(243, 88, 32);
+    overflow: hidden;
+    z-index: 1000; /* Keeps it above other content */
+}
 
     /* Navbar links */
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        font-size: 24px;
-        text-decoration: none;
-    }
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 24px;
+    text-decoration: none;
+}
 
-    /* Hover effect */
-    .navbar a:hover {
-        background-color: #38e4f7;
-        color: black;
-    }
+/* Hover effect */
+.navbar a:hover {
+    background-color: #38e4f7;
+    color: black;
+}
