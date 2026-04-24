@@ -46,3 +46,15 @@ h3 {
     color: black;
     font-size: 36px;
 }
+
+button.word {
+    border-style: solid;
+    border-color : rgb(0, 0, 0);
+    border-width : 5px;
+    font-size : 10px;
+    background-color: aquamarine;
+    text-align: center;
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
