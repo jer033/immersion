@@ -45,8 +45,8 @@
 
 <section class="boxed3">
 <p> We greatly appreciate your honest feedback. It helps us improve our services for you and for all future visitors of this website. </p>
-<p> Should you have any further inquires, please return to our <a href = "contact.html">Contact</a> page and fill out the inquiries form. </p>
-<p> You may also continue browsing our <a href ="index.html">website</a> page or look at our <a href = "faq.html">Frequently Asked Questions (FAQ)</a>. </p>
+<p> Should you have any further inquires, please return to our <a href = "contact.php">Contact</a> page and fill out the inquiries form. </p>
+<p> You may also continue browsing our <a href ="index.php">website</a> page or look at our <a href = "faq.php">Frequently Asked Questions (FAQ)</a>. </p>
 </section>
 
 
