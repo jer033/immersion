@@ -25,13 +25,13 @@
 <section class="forms">
 <form action = "inquire.php" method = "post" onsubmit = "return validate()" >
   <label for="fname">First name (required):</label>
-  <input type="text" id="fname" name="fname"> <p id="fnproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <input type="text" id="fname" name="fname"> <p id="fnproblem" style="display:none;color:red;font-size:12px;">This field is required.</p> <br>
   <label for="lname">Last name (required):</label>
-  <input type="text" id="lname" name="lname"> <p id="lnproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <input type="text" id="lname" name="lname"> <p id="lnproblem" style="display:none;color:red;font-size:12px;">This field is required.</p> <br>
   <label for="email">Email (required):</label>
-  <input type="email" id="email" name="email"> <p id="emproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <input type="email" id="email" name="email"> <p id="emproblem" style="display:none;color:red;font-size:12px;">This field is required.</p> <br>
   <label for="question">Your inquiry (required):</label><br>
-  <textarea id="question" name="question" rows="8" cols="180"></textarea> <p id="quproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <textarea id="question" name="question" rows="8" cols="180"></textarea> <p id="quproblem" style="display:none;color:red;font-size:12px;">This field is required.</p> <br>
   <input type="submit" value="Submit">
 </form>
 </section>
