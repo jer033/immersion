@@ -7,18 +7,11 @@
 </head>
 <body>
 
-<!-- TO DO: STYLE with CSS -->
+<?php 
+  $page_title = "Rating Feedback"; 
+  include 'header.php'; 
+?>
 
-<header>
-<div class="navbar" id = "menubar">
-  <a href="index.html">Home</a>
-  <a href="skills.html">Skills and Learnings</a>
-  <a href="memory.html">Educational Game</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-<h1><img src = "phoenix.jpg" alt = " " style="float:right;width:250px;height:80px">Inquiry Feedback </h1>
-</header>
 <h2> Thank you! </h2>
 <section class="boxed3">
 <?php if ($_POST["r15"]==1 || $_POST["r15"]==2) { ?>
