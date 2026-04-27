@@ -1,7 +1,24 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <!-- TO DO: STYLE with CSS -->
+
+<header>
+<div class="navbar" id = "menubar">
+  <a href="index.html">Home</a>
+  <a href="skills.html">Skills and Learnings</a>
+  <a href="memory.html">Educational Game</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1><img src = "phoenix.jpg" alt = " " style="float:right;width:250px;height:80px">Phoenix Work Immersion Portfolio </h1>
+</header>
 
 <?php
 
