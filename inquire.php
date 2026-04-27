@@ -10,7 +10,7 @@
 <!-- TO DO: STYLE with CSS -->
 
 <?php 
-  $page_title = "Frequently Asked Questions (FAQ)"; 
+  $page_title = "Inquiry Feedback"; 
   include 'header.php'; 
 ?>
 
