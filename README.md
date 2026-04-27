@@ -1,5 +1,7 @@
 The following pages are available:
 
+Site is accessible at: https://phoenix2526immersion.ct.ws/
+
 home.php : Home Page
 
 skills.php: Compilation of the skills and learnings (to be updated with the skills and learnings of other members) 
