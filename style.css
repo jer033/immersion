@@ -39,9 +39,9 @@ header {
 }
 
 .qnaq {
-    border-style: solid;
+    border-style: dotted;
     border-color : rgb(232, 155, 62);
-    background-color: #0950a1;
+    /*background-color: #0950a1;*/
     border-width : 10px;
     font-size: 24px;
     margin: 20px;
@@ -50,7 +50,7 @@ header {
 .qnaa {
     border-style: solid;
     border-color : rgb(171, 238, 63);
-    background-color: #ea9137;
+    /*background-color: #ea9137;*/
     border-width : 10px;
     font-size: 24px;
     margin: 20px;
