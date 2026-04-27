@@ -17,7 +17,7 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<h1><img src = "phoenix.jpg" alt = " " style="float:right;width:250px;height:80px">Phoenix Work Immersion Portfolio </h1>
+<h1><img src = "phoenix.jpg" alt = " " style="float:right;width:250px;height:80px">Inquiry Feedback </h1>
 </header>
 
 <?php
