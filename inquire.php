@@ -9,16 +9,10 @@
 
 <!-- TO DO: STYLE with CSS -->
 
-<header>
-<div class="navbar" id = "menubar">
-  <a href="index.html">Home</a>
-  <a href="skills.html">Skills and Learnings</a>
-  <a href="memory.html">Educational Game</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-<h1><img src = "phoenix.jpg" alt = " " style="float:right;width:250px;height:80px">Inquiry Feedback </h1>
-</header>
+<?php 
+  $page_title = "Frequently Asked Questions (FAQ)"; 
+  include 'header.php'; 
+?>
 
 <?php
 
@@ -57,7 +51,7 @@ Unfortunately, we could not process your request because of the following reason
         <?php } ?>
     </ul>
 
-You may try resubmitting the form through <a href = "contact.html"> this page </a>. Thank you!
+You may try resubmitting the form through <a href = "contact.php"> this page </a>. Thank you!
 </section>
 
 <?php
@@ -75,8 +69,8 @@ As a reminder, your inquiry was: <br>
 
 <i> Please wait for 2-3 business days for us to respond. </i> <br>
 
-In the meanwhile, feel free to browse the rest of our website. The home page can be accessed at <a href="index.html">Home</a>. <br>
-You may also refer to our <a href="faq.html">Frequently Asked Questions.</a>
+In the meanwhile, feel free to browse the rest of our website. The home page can be accessed at <a href="index.php">Home</a>. <br>
+You may also refer to our <a href="faq.php">Frequently Asked Questions.</a>
 
 </section>
 
