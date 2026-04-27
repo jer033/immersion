@@ -23,7 +23,7 @@
 <?php } } ?>
 
 <?php if ($_POST["r15"]==3 || $_POST["r15"]==4) { ?>
-<p> We are delighted to hear that you enjoyed our website. It is always a pleasure to serve our visitors. However, we are always looking for room for improvement. </p> 
+<p> We are delighted to hear that you enjoyed our website. It is always a pleasure to serve our visitors, but we are open to all suggestions on how to improve. </p> 
 <?php if (empty($_POST["reason"])) { ?>
 <p> If you would like, could you tell us how we could improve our services? </p>
 <?php } } ?>
@@ -39,8 +39,7 @@
 <!--We are delighted to hear that you enjoyed our website. Can you tell us what went so well?-->
 
 <section class="boxed3">
-<p> We greatly appreciate your honest feedback
-<?php if (!empty($_POST["nameop"])) 
+<p> We greatly appreciate your honest feedback<?php if (!empty($_POST["nameop"])) 
   echo htmlspecialchars(", " . $_POST["nameop"]); ?>
 . It helps us improve our services for you and for all future visitors of this website. 
 <?php if (!empty($_POST["emailop"])) 
