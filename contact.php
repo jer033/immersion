@@ -23,19 +23,62 @@
 
 <h2> Do you have any inquiries? </h2>
 <section class="forms">
-<!-- for github presentation: CHANGE to inquire.html -->
-<form action = "inquire.php" method = "post">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br>
-  <label for="question">Your inquiry:</label><br>
-  <textarea id="question" name="question" rows="8" cols="180"></textarea><br>
+<form action = "inquire.php" method = "post" onsubmit = "return validate()" >
+  <label for="fname">First name (required):</label>
+  <input type="text" id="fname" name="fname"> <p id="fnproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <label for="lname">Last name (required):</label>
+  <input type="text" id="lname" name="lname"> <p id="lnproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <label for="email">Email (required):</label>
+  <input type="email" id="email" name="email"> <p id="emproblem" style="display:none;color:red;">This field is required.</p> <br>
+  <label for="question">Your inquiry (required):</label><br>
+  <textarea id="question" name="question" rows="8" cols="180"></textarea> <p id="quproblem" style="display:none;color:red;">This field is required.</p> <br>
   <input type="submit" value="Submit">
 </form>
 </section>
+
+<script>
+
+function validate()
+{
+  let fn = document.getElementById("fname").value;
+  let ln = document.getElementById("lname").value;
+  let em = document.getElementById("email").value;
+  let qu = document.getElementById("question").value;
+
+  let all_clear = true;
+
+  if (fn=="") {
+    document.getElementById("fnproblem").style.display = "block";
+    all_clear = false;
+  }
+  else
+    document.getElementById("fnproblem").style.display = "none";
+
+  if (ln=="") {
+    document.getElementById("lnproblem").style.display = "block";
+    all_clear = false;
+  }
+  else
+    document.getElementById("lnproblem").style.display = "none";
+
+  if (em=="") {
+    document.getElementById("emproblem").style.display = "block";
+    all_clear = false;
+  }
+  else
+    document.getElementById("emproblem").style.display = "none";
+
+  if (qu=="") {
+    document.getElementById("quproblem").style.display = "block";
+    all_clear = false;
+  }
+  else
+    document.getElementById("quproblem").style.display = "none";
+  
+  return all_clear;
+}
+
+</script>
 
 <h2> Rate us! </h2>
 <section class="forms">
@@ -59,7 +102,7 @@
   <label for="exp5">5 (best experience)</label><br>
 
 
-  <label for="reason">Would you like to explain why?:</label><br>
+  <label for="reason">Would you like to explain why? (optional):</label><br>
   <textarea id="reason" name="reason" rows="8" cols="180"></textarea><br>
   <input type="submit" value="Submit">
 </form>
