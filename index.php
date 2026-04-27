@@ -44,7 +44,7 @@ It is connected with partner companies including Sibs Publishing House, Phoenix 
 <ul>
     <li>Jerome Austin Te: Web Development Department</li>
     <li>Jacob Tyler Tang: Data Verification Department</li>
-    <li>Johann Gabriel Go: Human Resources Department</li>
+    <li>Johann Gabriel Go: Research / Human Resources Department</li>
     <li>Sophia Dominique Sy: Ebook Art Department</li>
 </ul>
 </section>
