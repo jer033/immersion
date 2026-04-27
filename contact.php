@@ -25,13 +25,13 @@
 <section class="forms">
 <form action = "inquire.php" method = "post" onsubmit = "return validate()" >
   <label for="fname">First name (required):</label>
-  <input type="text" id="fname" name="fname"> <p id="fnproblem" style="color:red;font-size:12px;padding:1px">"&nbsp;"</p>
+  <input type="text" id="fname" name="fname"> <p id="fnproblem" style="color:red;font-size:12px;padding:1px"><br></p>
   <label for="lname">Last name (required):</label>
-  <input type="text" id="lname" name="lname"> <p id="lnproblem" style="color:red;font-size:12px;padding:1px">"&nbsp;"</p>
+  <input type="text" id="lname" name="lname"> <p id="lnproblem" style="color:red;font-size:12px;padding:1px"><br></p>
   <label for="email">Email (required):</label>
-  <input type="email" id="email" name="email"> <p id="emproblem" style="color:red;font-size:12px;padding:1px">"&nbsp;"</p>
+  <input type="email" id="email" name="email"> <p id="emproblem" style="color:red;font-size:12px;padding:1px"><br></p>
   <label for="question">Your inquiry (required):</label><br>
-  <textarea id="question" name="question" rows="8" cols="180"></textarea> <p id="quproblem" style="color:red;font-size:12px;padding:1px">"&nbsp;"</p> <br>
+  <textarea id="question" name="question" rows="8" cols="180"></textarea> <p id="quproblem" style="color:red;font-size:12px;padding:1px"><br></p> <br>
   <input type="submit" value="Submit">
 </form>
 </section>
@@ -52,28 +52,28 @@ function validate()
     all_clear = false;
   }
   else
-    document.getElementById("fnproblem").innerText = "&nbsp;";
+    document.getElementById("fnproblem").innerHTML = "&nbsp;";
 
   if (ln=="") {
     document.getElementById("lnproblem").innerText = "This field is required.";
     all_clear = false;
   }
   else
-    document.getElementById("lnproblem").innerText = "&nbsp;";
+    document.getElementById("lnproblem").innerHTML = "&nbsp;";
 
   if (em=="") {
     document.getElementById("emproblem").innerText = "This field is required.";
     all_clear = false;
   }
   else
-    document.getElementById("emproblem").innerText = "&nbsp;";
+    document.getElementById("emproblem").innerHTML = "&nbsp;";
 
   if (qu=="") {
     document.getElementById("quproblem").innerText = "This field is required.";
     all_clear = false;
   }
   else
-    document.getElementById("quproblem").innerText = "&nbsp;";
+    document.getElementById("quproblem").innerHTML = "&nbsp;";
   
   return all_clear;
 }
