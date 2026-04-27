@@ -12,6 +12,8 @@
   include 'header.php'; 
 ?>
 
+<!--try again-->
+
 <h2> Thank you! </h2>
 <section class="boxed3">
 <?php if ($_POST["r15"]==1 || $_POST["r15"]==2) { ?>
