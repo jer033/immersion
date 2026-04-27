@@ -9,9 +9,8 @@
 <body>
     
 <header>
-
 <div class="navbar" id = "menubar">
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="skills.html">Skills and Learnings</a>
   <a href="memory.html">Educational Game</a>
   <a href="contact.html">Contact</a>
@@ -145,8 +144,7 @@ function runRound(given_button)
             const j = Math.floor(Math.random() * (i + 1));
             [curr_words[i], curr_words[j]] = [curr_words[j], curr_words[i]]; // Swap
         }
-        for (let i = 0; i<len; i++)
-        {
+        for (let i = 0; i<len; i++) {
             buttons[i].innerText = curr_words[i];
         }
         //determine the new correct answer
@@ -175,3 +173,4 @@ score: # of correct words pressed
 
 </body>
 </html>
+
