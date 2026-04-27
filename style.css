@@ -38,7 +38,7 @@ header {
     margin: 20px;
 }
 
-.qnaq {
+section.qnaq {
     border-style: solid;
     border-color : rgb(232, 155, 62);
     background-color: #0950a1;
@@ -47,7 +47,7 @@ header {
     margin: 20px;
 }
 
-.qnaa {
+section.qnaa {
     border-style: solid;
     border-color : rgb(171, 242, 56);
     background-color: #ea9137;
