@@ -7,12 +7,12 @@
 </head>
 <body>
 
+<!-- TO DO: STYLE with CSS -->
+
 <?php 
   $page_title = "Rating Feedback"; 
   include 'header.php'; 
 ?>
-
-<!--try again-->
 
 <h2> Thank you! </h2>
 <section class="boxed3">
@@ -39,7 +39,12 @@
 <!--We are delighted to hear that you enjoyed our website. Can you tell us what went so well?-->
 
 <section class="boxed3">
-<p> We greatly appreciate your honest feedback. It helps us improve our services for you and for all future visitors of this website. </p>
+<p> We greatly appreciate your honest feedback
+<?php if (!empty($_POST["nameop"])) 
+  echo htmlspecialchars(", " . $_POST["nameop"]); ?>
+. It helps us improve our services for you and for all future visitors of this website. 
+<?php if (!empty($_POST["emailop"])) 
+  echo htmlspecialchars(" We may contact you at " . $_POST["emailop"] . " to further discuss your feedback. "); ?></p>
 <p> Should you have any further inquires, please return to our <a href = "contact.php">Contact</a> page and fill out the inquiries form. </p>
 <p> You may also continue browsing our <a href ="index.php">website</a> page or look at our <a href = "faq.php">Frequently Asked Questions (FAQ)</a>. </p>
 </section>
