@@ -18,6 +18,6 @@ TO BE DONE:
 
 Make MySQL Hosting
 
-faq.html : Frequently Asked Questions
+faq.php : Frequently Asked Questions
 
 
