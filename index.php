@@ -9,7 +9,7 @@
 <body>
     
 <?php 
-  $page_title = "Home"; 
+  $page_title = "Phoenix Work Immersion Portfolio"; 
   include 'header.php'; 
 ?>
 
