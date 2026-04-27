@@ -38,7 +38,22 @@ Despite this, all the companies have a united mission to better the quality of e
     <li>AREYS Logistics and Distribution Corp
     <li>Global Resources for Assessment Curriculum and Evaluation (GRACE), Inc.
 </ul>
+</section>
 
+<section class="qnaq"> <p> Q: Were the people at Phoenix welcoming to you? </p>
+</section>
+<section class="qnaa"> 
+<p> A: Yes! Everyone at Phoenix is very polite. It is their company's culture to always greet each other, fueled by the core value of "Alagang Mahalaga". 
+  They even gave us a tour of the company and provided us lunch on our first day! It definitely eased our nerves and made us excited to work at the company.
+</p>
+</section>
+
+
+<section class="qnaq"> <p> Q: Did you enjoy your time at Phoenix? </p>
+</section>
+<section class="qnaa"> 
+<p> A: A resounding yes!
+</p>
 </section>
 
 </body>
