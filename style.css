@@ -30,6 +30,14 @@ header {
     margin: 20px;
 }
 
+.boxed3 {
+    border-style: solid;
+    border-color : rgb(232, 155, 62);
+    border-width : 10px;
+    font-size: 24px;
+    margin: 20px;
+}
+
 .forms {
     border-style: solid;
     border-color : #333355;
