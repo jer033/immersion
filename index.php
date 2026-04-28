@@ -57,6 +57,7 @@ It is connected with partner companies including Sibs Publishing House, Phoenix 
   <li><a href="memory.php">Educational Game</a></li>
   <li><a href="contact.php">Contact</a></li>
   <li><a href="faq.php">Frequently Asked Questions (FAQ)</a></li>
+  <li>Login <a href="login.php">here</a> or register for a new account <a href="register.php">here</a>. </li>
 </ul>
 </section>
 </body>
