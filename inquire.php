@@ -1,4 +1,7 @@
 <?php
+$page_title = "Inquiry Feedback"; 
+include 'header.php'; 
+
 include 'db_connect.php';
 
 $must_hide = false;
@@ -43,11 +46,6 @@ if (! mysqli_query($conn, $sql)) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<?php 
-  $page_title = "Inquiry Feedback"; 
-  include 'header.php'; 
-?>
 
 
 <?php
