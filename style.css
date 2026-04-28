@@ -39,7 +39,7 @@ header {
 }
 
 .qnaq {
-    border-style: dotted;
+    border-style: double;
     border-color : rgb(232, 155, 62);
     background-color: #0950a1;
     color: white;
