@@ -1,3 +1,8 @@
+<?php 
+  $page_title = "Contact"; 
+  include 'header.php'; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +12,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<?php 
-  $page_title = "Contact"; 
-  include 'header.php'; 
-?>
 
 <h2> Contact Information </h2>
 <section class="boxed" style="background-color: #e4ff82">
