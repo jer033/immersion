@@ -2,6 +2,10 @@
 $page_title = "Register New Account"; 
 include 'header.php';
 $show_taken_error = isset($_GET['error']) && $_GET['error'] == 'username_has_been_taken';
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header("Location: index.php?info=already_logged_in");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
