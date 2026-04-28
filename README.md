@@ -17,6 +17,8 @@ The following pages are available:
 
 TO BE DONE:
 - Host MySQL for the 2nd feedback form
+- Leaderboard page
+- Fix UI for different screens
 
 
 DAILY LOGS
