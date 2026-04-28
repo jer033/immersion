@@ -16,8 +16,8 @@ The following pages are available:
 - logout.php
 
 TO BE DONE:
-- Host MySQL for the 2nd feedback form
 - Leaderboard page
+- Chat room
 - Fix UI for different screens
 
 
@@ -50,4 +50,4 @@ Day 4:
 - INSTRUCTION (10AM): Add a log-in and log-out page to the website
 - 10AM to 2PM: Worked on registration process and login system (JS, MySQL)
 - 2PM to 4PM: Worked on a save high score system for the game and added password retyping
-- 4PM to 5PM: Created a database for the second form (MySQL)
+- 4PM to 5PM: Created a database for the second form (MySQL) and updated mobile users UI
