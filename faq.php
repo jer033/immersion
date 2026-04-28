@@ -1,3 +1,8 @@
+<?php 
+  $page_title = "Frequently Asked Questions (FAQ)"; 
+  include 'header.php'; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +12,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<?php 
-  $page_title = "Frequently Asked Questions (FAQ)"; 
-  include 'header.php'; 
-?>
 
 <section class="qnaq"> <p> Q: Were you all doing the same thing during the immersion? </p>
 </section>
