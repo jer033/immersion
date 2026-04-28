@@ -15,14 +15,19 @@ if (mysqli_num_rows($result) > 0) {
     $success = false;
     exit();
   }
-  else {
-    $sql = "INSERT INTO Users (Username, EncryptedPassword)
-VALUES ('$username', '$encrypted_password')";
-  }
+else if ($_POST['pw']!== $_POST['repw']) {
+    header("Location: register.php?error=passwords_dont_match");
+    exit();
+}
+else {
+    $sql = "INSERT INTO Users (Username, EncryptedPassword) VALUES ('$username', '$encrypted_password')";
 
-if ((! mysqli_query($conn, $sql)) and ($success)) {
-    $success = false;
-    echo "Error: " . mysqli_error($conn);
+    if (mysqli_query($conn, $sql)) {
+        $success = true;
+    } else {
+        $success = false;
+        error_log("Database error: " . mysqli_error($conn));
+    }
 }
 ?>
 
