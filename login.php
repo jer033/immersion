@@ -2,6 +2,9 @@
 $page_title = "Login"; 
 include 'header.php';
 $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_password';
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header("Location: index.php?info=already_logged_in");
+    exit();
 ?>
 
 <!DOCTYPE html>
