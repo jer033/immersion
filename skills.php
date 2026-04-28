@@ -1,3 +1,8 @@
+<?php 
+  $page_title = "Skills and Learnings"; 
+  include 'header.php'; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +12,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<?php 
-  $page_title = "Skills and Learnings"; 
-  include 'header.php'; 
-?>
 
 <h3> Here is a list of skills that we learned at our time in Phoenix: </h3>
 
