@@ -3,7 +3,7 @@ $page_title = "Leaderboard";
 include 'header.php';
 include 'db_connect.php';
 
-$retrieve_command = "SELECT Username, HighScore, ...
+$retrieve_command = "SELECT Username, HighScore
 FROM Users ORDER BY HighScore DESC, Username ASC LIMIT 25";
 $fetched_data = mysqli_query($conn, $retrieve_command);
 ?>
@@ -48,4 +48,5 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 </body>
 </html>
+
 
