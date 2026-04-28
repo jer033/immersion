@@ -21,7 +21,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 <section class="forms">
 <form action = "regsuccess.php" method = "post" onsubmit = "return validate()" >
   <label for="us">Username (required):</label>
-  <input type="text" id="us" name="us">
+  <input type="text" id="us" name="us" required>
   <p id="usreqs" style="font-size:16px;margin:1px">
     Your username must have at least 6 characters. </p>
 
@@ -30,9 +30,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 </p>
 
   <label for="pw">Password (required):</label>
-  <input type="password" id="pw" name="pw">
+  <input type="password" id="pw" name="pw" required>
   <p id="pwreqs" style="font-size:16px;margin:1px">
     Your password must have at least 8 characters, at least one uppercase or lowercase letter, and at least one digit (0-9). </p>
+
+    <label for="repw">Retype password (required):</label>
+  <input type="password" id="repw" name="repw" required>
+  <p id="retypedpwwarning" style="visibility:hidden;color:red;font-size:16px;margin:1px"> Passwords do not match. </p>
+
   <input type="submit" value="Submit">
 </form>
 </section>
@@ -43,6 +48,7 @@ function validate()
 {
   let username = document.getElementById("us").value;
   let password = document.getElementById("pw").value;
+  let retyped_password = document.getElementById("repw").value;
 
   let all_clear = true;
 
@@ -60,6 +66,14 @@ function validate()
   else {
     document.getElementById("pwreqs").style.color = "red";
     all_clear = false;
+  }
+
+  if (password != retyped_password) {
+    document.getElementById("retypedpwwarning").style.visibility = "visible";
+    all_clear = false;
+  }
+  else {
+    document.getElementById("retypedpwwarning").style.visibility = "hidden";
   }
 
   return all_clear;
