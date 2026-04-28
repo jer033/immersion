@@ -42,7 +42,7 @@ if ((! mysqli_query($conn, $sql)) and ($success)) {
 <?php if ($success) { ?>
 <h2>Congratulations, <?php echo htmlspecialchars($username); ?>! </h2>
 <h3>You have successfully registered a new account.</h3>
-<h3>You may now proceed to our <a href="index.php">login page</a>.</h3>
+<h3>You may now proceed to our <a href="login.php">login page</a>.</h3>
 <?php }
 else { ?>
 <h3>Unfortunately, something went wrong. Please try again later. </h3>
