@@ -45,4 +45,4 @@ Day 3:
 Day 4:
 - 8AM - 10AM: Create a database for the first form (MySQL)
 - INSTRUCTION (10AM): Add a log-in and log-out page to the website
-- 10AM - 12NN: Worked on registration process (registration page and registration successful page; JS, MySQL)
+- 10AM - 3PM: Worked on registration process, login system, and save high score system (JS, MySQL)
