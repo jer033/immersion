@@ -1,3 +1,8 @@
+<?php 
+  $page_title = "Rating Feedback"; 
+  include 'header.php'; 
+?>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -6,13 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- TO DO: STYLE with CSS -->
-
-<?php 
-  $page_title = "Rating Feedback"; 
-  include 'header.php'; 
-?>
 
 <h2> Thank you! </h2>
 <section class="boxed3">
