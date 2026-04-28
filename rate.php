@@ -1,6 +1,35 @@
 <?php 
   $page_title = "Rating Feedback"; 
   include 'header.php'; 
+
+include 'db_connect.php';
+$name = NULL;
+$email = NULL;
+$rating = 0;
+$explanation = NULL;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (!empty($_POST['nameop'])) {
+    $name = mysqli_real_escape_string($conn, $_POST['nameop']);
+  } 
+
+  if (!empty($_POST['emailop'])) {
+    $email = mysqli_real_escape_string($conn, $_POST['emailop']);
+  } 
+
+  $rating = $_POST['r15'];
+
+  if (!empty($_POST['reason'])) {
+    $explanation = mysqli_real_escape_string($conn, $_POST['reason']);
+  } 
+
+  $sql = "INSERT INTO Ratings (Name, Email, Rating, Reason)
+VALUES ('$name', '$email', '$rating', '$explanation')";
+
+if (! mysqli_query($conn, $sql)) {
+    echo "Error: " . mysqli_error($conn);
+}
+}
 ?>
 
 <html>
