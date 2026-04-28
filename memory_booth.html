@@ -117,6 +117,8 @@ function runRound(given_button)
         //add to the score
         counter++;
         updateScore();
+        curr_high_score = Math.max(curr_high_score, counter);
+        document.getElementById("hscore").innerText = curr_high_score;
         if (counter==100)
         {
             document.getElementById("winbutton").innerText = "YOU WIN! Thank you for playing. Please show this screen to the booth hosts. ";
@@ -178,4 +180,3 @@ score: # of correct words pressed
 
 </body>
 </html>
-
