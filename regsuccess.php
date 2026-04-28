@@ -1,4 +1,7 @@
 <?php
+$page_title = "Registration Successful"; 
+include 'header.php';
+
 include 'db_connect.php';
 
 $username = mysqli_real_escape_string($conn, $_POST['us']);
@@ -33,10 +36,6 @@ if ((! mysqli_query($conn, $sql)) and ($success)) {
 </head>
 <body>
 
-<?php 
-  $page_title = "Registration Successful"; 
-  include 'header.php';
-?>
 
 <section class="boxed3">
 <?php if ($success) { ?>
