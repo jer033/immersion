@@ -13,9 +13,7 @@ The following pages are available:
 - regsuccess.php
 
 TO BE DONE:
-- Create a login and logout page
-- CHange the link in regsuccess.php to login.php
-- Host MySQL for the feedback form
+- Host MySQL for the 2nd feedback form
 
 
 DAILY LOGS
