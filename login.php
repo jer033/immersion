@@ -5,6 +5,7 @@ $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_pas
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     header("Location: index.php?info=already_logged_in");
     exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -38,5 +39,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
 </body>
 </html>
+
 
 
