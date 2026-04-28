@@ -23,7 +23,7 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 <section class="boxed3">
     <h2>Top 25 Players</h2>
-    <table style="width: 100%; border-collapse: collapse; color: #3d1d2d; table-layout: fixed" >
+    <table style="border-collapse: collapse; color: #3d1d2d; table-layout: fixed" >
         <thead>
             <tr style="text-align: left; border-bottom: 2px solid #ffb592;">
                 <th>Rank</th>
@@ -48,3 +48,4 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 </body>
 </html>
+
