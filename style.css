@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 h1{
     color: rgb(155, 67, 9);
         padding: 10px;
@@ -111,4 +115,40 @@ button.word {
 .navbar a:hover {
     background-color: #38e4f7;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* Scale down the massive headers */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 { font-size: 28px; }
+    h3 { font-size: 24px; }
+
+    /* Reduce borders and font sizes for boxed elements */
+    .boxed, .boxed2, .boxed3, .qnaq, .qnaa, .forms {
+        font-size: 18px;
+        border-width: 5px;
+        margin: 10px;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgb(20, 197, 246);
+    }
+
+    /* Handle the Phoenix Image */
+    header h1 img {
+        float: none !important;
+        display: block;
+        margin: 0 0 10px auto;
+        align-self: right;
+        max-width: 100%;
+        height: auto; 
+    }
 }
