@@ -1,4 +1,6 @@
 <?php
+$page_title = "Login"; 
+include 'header.php';
 $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_password';
 ?>
 
@@ -12,10 +14,6 @@ $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_pas
 </head>
 <body>
     
-<?php 
-  $page_title = "Login"; 
-  include 'header.php';
-?>
 
 <section class="forms">
 <form action = "loginsuccess.php" method = "post" >
@@ -35,3 +33,4 @@ $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_pas
 
 </body>
 </html>
+
