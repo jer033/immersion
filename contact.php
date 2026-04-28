@@ -23,7 +23,7 @@
 
 <h2> Do you have any inquiries? </h2>
 <section class="forms">
-<form action = "inquire.php" method = "post" onsubmit = "return validate()" >
+<form action = "process_q.php" method = "post" onsubmit = "return validate()" >
   <label for="fname">First name (required):</label>
   <input type="text" id="fname" name="fname"> <p id="fnproblem" style="color:red;font-size:16px;margin:1px"></p>
   <label for="lname">Last name (required):</label>
