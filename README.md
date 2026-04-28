@@ -9,9 +9,12 @@ The following pages are available:
 - inquire.php : Redirects after inquiring
 - rate.php : Redirects after submitting feedback
 - faq.php : Frequently Asked Questions
+- register.php : New user registration'
+- regsuccess.php
 
 TO BE DONE:
 - Create a login and logout page
+- CHange the link in regsuccess.php to login.php
 - Host MySQL for the feedback form
 
 
