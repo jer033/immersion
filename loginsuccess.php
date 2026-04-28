@@ -1,4 +1,6 @@
 <?php
+$page_title = "Login Successful"; 
+include 'header.php';
 include 'db_connect.php';
 
 $username = mysqli_real_escape_string($conn, $_POST['us']);
@@ -38,11 +40,6 @@ else {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<?php 
-  $page_title = "Login Successful"; 
-  include 'header.php';
-?>
 
 <section class="boxed3">
 <?php if ($success) { ?>
