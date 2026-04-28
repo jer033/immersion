@@ -18,7 +18,7 @@ $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_pas
 <section class="forms">
 <form action = "loginsuccess.php" method = "post" >
   <label for="us">Username (required):</label>
-  <input type="text" id="us" name="us">
+  <input type="text" id="us" name="us"> <br>
 
   <label for="pw">Password (required):</label>
   <input type="password" id="pw" name="pw">
@@ -27,7 +27,7 @@ $show_password_error = isset($_GET['error']) && $_GET['error'] == 'incorrect_pas
     <br> Either the username or password entered is incorrect.
 </p>
 
-<p style="color:black; font-size:16px; margin:1px;> <br> If you do not have an account, you can register for one <a href = "register.php">here</a>.</p>
+<p style="color:black; font-size:16px; margin:1px;"> <br> If you do not have an account, you can register for one <a href = "register.php">here</a>.</p>
 
   <input type="submit" value="Submit">
 </form>
