@@ -19,6 +19,7 @@ DAILY LOGS
 
 Day 1:
 - 8AM to 11AM: Company orientation, tour
+- ASSIGNMENT GIVEN (11AM): Learn HTML, CSS, PHP
 - 11AM to 4PM: Learn HTML and CSS
 - 4PM to 5PM: Learn PHP
 
