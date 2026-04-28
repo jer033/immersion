@@ -1,4 +1,6 @@
 <?php
+$page_title = "Register New Account"; 
+include 'header.php';
 $show_taken_error = isset($_GET['error']) && $_GET['error'] == 'username_has_been_taken';
 ?>
 
@@ -11,11 +13,6 @@ $show_taken_error = isset($_GET['error']) && $_GET['error'] == 'username_has_bee
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<?php 
-  $page_title = "Register New Account"; 
-  include 'header.php';
-?>
 
 <section class="forms">
 <form action = "regsuccess.php" method = "post" onsubmit = "return validate()" >
