@@ -1,20 +1,5 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- TO DO: STYLE with CSS -->
-
-<?php 
-  $page_title = "Inquiry Feedback"; 
-  include 'header.php'; 
-?>
-
 <?php
+include 'db_connect.php';
 
 $must_hide = false;
 $name_err = $email_err = $quest_err = false;
@@ -34,6 +19,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $quest_err = true;
   } 
 
+if (! $must_hide) {
+$visitor_first_name = mysqli_real_escape_string($conn, $_POST['fname']);
+$visitor_last_name = mysqli_real_escape_string($conn, $_POST['lname']);
+$visitor_email = mysqli_real_escape_string($conn, $_POST['email']);
+$visitor_inquiry = mysqli_real_escape_string($conn, $_POST['question']);
+
+$sql = "INSERT INTO Questions (FName, LName, Email, Question)
+VALUES ('$visitor_first_name', '$visitor_last_name', '$visitor_email', '$visitor_inquiry')";
+
+if (! mysqli_query($conn, $sql)) {
+    echo "Error: " . mysqli_error($conn);
+}
+}
+?>
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<?php 
+  $page_title = "Inquiry Feedback"; 
+  include 'header.php'; 
+?>
+
+
+<?php
   if ($must_hide) { 
     ?>
 <section class = "boxed3" id = "problem">
