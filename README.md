@@ -2,15 +2,18 @@ Site is accessible at: https://phoenix2526immersion.ct.ws/
 
 The following pages are available:
 - home.php : Home Page
-- skills.php: Compilation of the skills and learnings (to be updated with the skills and learnings of other members?) 
+- skills.php : Compilation of the skills and learnings (to be updated with the skills and learnings of other members?) 
 - memory.php : A memory game
-- memory_booth.html : Version of the game to be played at the booth
+- memory_booth.html : Version of the game to be played at the JCA booth (only requires wifi to load)
 - contact.php : Contact details & feedback page
 - inquire.php : Redirects after inquiring
 - rate.php : Redirects after submitting feedback
 - faq.php : Frequently Asked Questions
 - register.php : New user registration'
 - regsuccess.php
+- login.php : Existing user login
+- loginsuccess.php
+- logout.php
 
 TO BE DONE:
 - Host MySQL for the 2nd feedback form
