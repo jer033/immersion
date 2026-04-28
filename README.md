@@ -4,7 +4,7 @@ Site is accessible at: https://phoenix2526immersion.ct.ws/
 
 home.php : Home Page
 
-skills.php: Compilation of the skills and learnings (to be updated with the skills and learnings of other members) 
+skills.php: Compilation of the skills and learnings (to be updated with the skills and learnings of other members?) 
 
 memory.php : A memory game
 
@@ -16,10 +16,10 @@ inquire.php : Redirects after inquiring
 
 rate.php : Redirects after submitting feedback
 
+faq.php : Frequently Asked Questions
+
 TO BE DONE:
 
 Make MySQL Hosting
-
-faq.php : Frequently Asked Questions
 
 
