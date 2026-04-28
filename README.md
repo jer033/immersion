@@ -5,11 +5,12 @@ The following pages are available:
 - skills.php : Compilation of the skills and learnings (to be updated with the skills and learnings of other members?) 
 - memory.php : A memory game
 - memory_booth.html : Version of the game to be played at the JCA booth (only requires wifi to load)
+- leaderboard.php : Leaderboard for the memory game
 - contact.php : Contact details & feedback page
 - inquire.php : Redirects after inquiring
 - rate.php : Redirects after submitting feedback
 - faq.php : Frequently Asked Questions
-- register.php : New user registration'
+- register.php : New user registration
 - regsuccess.php
 - login.php : Existing user login
 - loginsuccess.php
@@ -50,4 +51,6 @@ Day 4:
 - INSTRUCTION (10AM): Add a log-in and log-out page to the website
 - 10AM to 2PM: Worked on registration process and login system (JS, MySQL)
 - 2PM to 4PM: Worked on a save high score system for the game and added password retyping
-- 4PM to 5PM: Created a database for the second form (MySQL) and updated mobile users UI
+- 4PM to 5PM: Created a database for the second form (MySQL), updated mobile users UI, and created a game leaderboard
+
+Day 5:
