@@ -1,3 +1,8 @@
+<?php 
+  $page_title = "Phoenix Work Immersion Portfolio"; 
+  include 'header.php'; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +12,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<?php 
-  $page_title = "Phoenix Work Immersion Portfolio"; 
-  include 'header.php'; 
-?>
 
 <h2> Who are we?</h2>
 <section class="boxed">
