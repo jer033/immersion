@@ -8,7 +8,7 @@ session_start();
   <a href="memory.php">Educational Game</a>
   <a href="contact.php">Contact</a>
   <a href="faq.php">FAQ</a>
-  <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) { ?>
+  <?php if ((isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true)||($page_title === "Login Successful")) { ?>
 <a href="logout.php">Logout</a>
   <?php }
 else { ?>
