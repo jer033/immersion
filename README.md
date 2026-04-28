@@ -16,6 +16,7 @@ TO BE DONE:
 
 
 DAILY LOGS
+- Times are written to the nearest hour for convenience. However, daily breaks were taken from 10:00-10:15AM, 12NN-1PM, and 3:00-3:15PM.
 
 Day 1:
 - 8AM to 11AM: Company orientation, tour
@@ -39,5 +40,6 @@ Day 3:
 - 4PM to 5PM: Learn SQL and MySQL
 
 Day 4:
-- 8AM - 10AM : Create a database for the first form (MySQL)
+- 8AM - 10AM: Create a database for the first form (MySQL)
 - INSTRUCTION (10AM): Add a log-in and log-out page to the website
+- 10AM - 12NN: Worked on registration process (registration page and registration successful page; JS, MySQL)
