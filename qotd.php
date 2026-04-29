@@ -56,6 +56,8 @@
 
 <h3> Note: You do not need to be logged in to vote. </h3>
 
+<h3> <a href = "results.php">Results</a> </h3>
+
 <?php if ($show_double_vote_warning) { ?>
 <h3 style="color:red"> YOU HAVE ALREADY VOTED. YOU CANNOT VOTE AGAIN! </h3>
 <?php } ?>
