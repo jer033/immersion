@@ -17,7 +17,6 @@ The following pages are available:
 - logout.php
 
 TO BE DONE:
-- Leaderboard page
 - Chat room
 - Fix UI for different screens
 
