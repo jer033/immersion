@@ -3,6 +3,7 @@ $page_title = "Forum";
 include 'header.php';
 include 'db_connect.php';
 
+date_default_timezone_set('Asia/Manila');
 //check if a message was just sent
 if ($_SESSION['loggedin']) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['message'])) {
@@ -59,4 +60,5 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 </body>
 </html>
+
 
