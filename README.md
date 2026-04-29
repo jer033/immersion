@@ -47,9 +47,11 @@ Day 3:
 
 Day 4:
 - 8AM to 10AM: Created a database for the first form (MySQL)
-- INSTRUCTION (10AM): Add a log-in and log-out page to the website
+- INSTRUCTION (10AM): Add a login and logout page to the website
 - 10AM to 2PM: Worked on registration process and login system (JS, MySQL)
 - 2PM to 4PM: Worked on a save high score system for the game and added password retyping
 - 4PM to 5PM: Created a database for the second form (MySQL), updated mobile users UI, and created a game leaderboard
 
 Day 5:
+- 8AM to 9AM: Edited skills and learnings page
+- 9AM to (): Created a message forum for logged in users
