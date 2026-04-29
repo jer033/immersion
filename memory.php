@@ -7,6 +7,7 @@ $load_save_button = false;
 $just_saved = false;
 $score_saved = 0;
 $curr_high_score = 0;
+$goal_button = true;
 if ($_SESSION['loggedin']) {
     $username = $_SESSION['username'];
 
@@ -50,10 +51,21 @@ if ($_SESSION['loggedin']) {
 <p style="font-size:16px;"> Every few rounds, the number of words will increase. </p>
 <p style="font-size:16px;"> Your score is the number of correct words you press. Good luck! </p>
 <?php if($load_save_button) { ?>
-<p style="font-size:16px;"> <i> Because you are logged in, you can save your high score. To do this, you <b>must</b> click the "Save High Score" button. </i> </p>
+<p style="font-size:16px;"> <i> Because you are logged in, you can save your high score. To do this, you <b>must</b> click the "Save High Score" button (which will refresh the page). </i> </p>
 <p style="font-size:16px;"> <i> Note that your scores are not automatically saved. </i> </p>
 <?php } ?>
+
+<?php if ($goal_button) { ?>
+<p style="font-size:16px;"> For JCA students and personnel: <i> You may use this page or the <a href="memory_booth.html">other</a> page.
+The difference is that this page has a save button and that scores on this page will reflect on the leaderboard. 
+However, if the WiFi is not very strong right now, it is recommended that you use the other page.</i> </p>
+<?php } ?>
 </section>
+
+<?php if ($goal_button) { ?>
+<button id="winbutton">Goal: 100 points</button>
+<br>
+<?php } ?>
 
 <h4> High Score: <b id="hscore"> <?php echo $curr_high_score; ?> </b> </h4>
 
@@ -166,6 +178,11 @@ function runRound(given_button)
         if (document.getElementById("hidden_score_input")) {
         document.getElementById("hidden_score_input").value = curr_high_score;
         };
+        <?php if ($goal_button) { ?>
+        if (curr_high_score>=100) {
+            document.getElementById("winbutton").innerText = "YOU WIN! Thank you for playing. Please show this screen to the booth hosts. ";
+        }
+        <?php } ?>
 
         let throwaway = 1;
         //determine whether to add a new button
@@ -224,4 +241,5 @@ score: # of correct words pressed
 
 </body>
 </html>
+
 
