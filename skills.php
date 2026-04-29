@@ -42,6 +42,12 @@ sending and receiving cookies, and analyzing and encrypting data in the database
 It can update and change both HTML and CSS.
  </p>
 
+<h3 style="text-align:right;">MySQL</h3>
+    <img src = "mysql.png" alt = "MySQL" style="float:right;width:300px;height:150px;margin-bottom:100px">
+    <p> MySQL (My Structured Query Language) is an open source relational database management system (RDBMS). 
+        It is used to store data behind the scenes of a website. This allows for form submissions to be processed and can even allow for user interactions through a website!
+ </p>
+
  <br>
  <br>
  <br>
