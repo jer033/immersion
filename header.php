@@ -18,5 +18,5 @@ else { ?>
 <?php } ?>
 </div>
 
-<h1><img src = "phoenix.jpg" alt = " " style="float:right;width:250px;height:80px"><?php echo $page_title; ?></h1>
+<h1><img src = "images/phoenix.jpg" alt = " " style="float:right;width:250px;height:80px"><?php echo $page_title; ?></h1>
 </header>
