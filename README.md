@@ -6,6 +6,7 @@ The following pages are available:
 - memory.php : A memory game
 - memory_booth.html : Version of the game to be played at the JCA booth (only requires wifi to load)
 - leaderboard.php : Leaderboard for the memory game
+- forum.php : Message board where users can send public messages
 - contact.php : Contact details & feedback page
 - inquire.php : Redirects after inquiring
 - rate.php : Redirects after submitting feedback
@@ -59,3 +60,4 @@ Day 5:
 - 11AM to 12NN: Presented website features to supervisor, reorganized files, and finalized game features for booth showcase
 - 1PM to 2PM: Began writing QOTD page
 - 2PM to 3PM: Held Thanksgiving Program
+- 3PM to (): Continued writing QOTD page, 
