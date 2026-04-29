@@ -21,7 +21,7 @@
     <img src = "images/html5.png" alt = "HTML" style="float:right;width:100px;height:100px;">
     <p> HTML ("Hyper Text Markup Language") is the standard markup language for creating Web pages.
 It describes the structure of a Web page through a series of elements that label pieces of content
-and tell the browser how to display the content. For example, this entire paragraph is enclosed in ```<p> </p>``` for proper rendering.
+and tell the browser how to display the content. For example, this entire paragraph is enclosed in &lt;p&gt; &lt;/p&gt; for proper rendering.
 </p>
     <h3>CSS</h3>
     <img src = "images/css3.png" alt = "CSS" style="float:left;width:150px;height:150px;">
