@@ -127,16 +127,16 @@ button.word {
 
 .message {
     color: black;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .messagesender {
     color: MidnightBlue;
-    font-size: 12px;
+    font-size: 24px;
 }
 
 .stamp {
-    color: Cornsilk;
+    color: rgb(17, 125, 22);
     font-size: 12px;
 }
 
@@ -162,6 +162,7 @@ button.word {
         display: block;
         width: 100%;
         text-align: left;
+        font-size: 12px;
         border-bottom: 1px solid rgb(20, 197, 246);
     }
 
