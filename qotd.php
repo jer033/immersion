@@ -3,17 +3,21 @@
   include 'header.php'; 
 
   $show_double_vote_warning = isset($_GET['error']) && $_GET['error'] == 'doublevote';
+  $show_success_vote = isset($_GET['i']) && $_GET['i'] == 'success';
   if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email']) && isset($_POST['ppizza'])) {
         $jcaemail = mysqli_real_escape_string($conn, $_POST['email']);
         $count_query = "SELECT COUNT(Email) FROM Pizza WHERE Email = '$jcaemail'";
         $result = mysqli_query($conn, $count_query);
-        if ($result > 0) {
+        $final_count = mysqli_fetch_assoc($result);
+        if ($final_count['COUNT(Email)'] > 0) {
             header("Location: qotd.php?error=doublevote");
             exit();
         } else {
             $insert_sql = "INSERT INTO Pizza (Email, Vote)
-            VALUES ('$jcaemail', '$_POST['ppizza']');"
+            VALUES ('$jcaemail', '{$_POST['ppizza']}');";
             mysqli_query($conn, $insert_sql);
+            header("Location: qotd.php?i=success");
+            exit();
         }
     }
 
@@ -37,7 +41,7 @@
 <form action = "qotd.php" method = "post">
   <label for="email">JCA Email (required):</label>
   <input type="email" id="email" name="email" required pattern="[a-z]+@(jca\.edu\.ph|student\.jca\.edu\.ph)"
-  title="Please use your @jca.edu.ph or @student.jca.edu.ph email address.>
+  title="Please use your @jca.edu.ph or @student.jca.edu.ph email address.">
   <fieldset style="border: none; padding: 0; margin-top: 10px;">
       <legend>Does pineapple belong on pizza?</legend>
   <label for="yesppizza">YES</label>
@@ -53,6 +57,9 @@
 
 <?php if ($show_double_vote_warning) { ?>
 <h3 style="color:red"> YOU HAVE ALREADY VOTED. YOU CANNOT VOTE AGAIN! </h3>
+<?php } ?>
+<?php if ($show_success_vote) { ?>
+<h3 style="color:green"> Congratulations! You have voted. </h3>
 <?php } ?>
 
 </body>
