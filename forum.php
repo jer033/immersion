@@ -13,9 +13,9 @@ if ($_SESSION['loggedin']) {
                        VALUES ('$username', '$message_content', '$sent_on')";
         
         mysqli_query($conn, $update_sql);
+        header("Location: forum.php");
+        exit();
     }
-    header("Location: forum.php");
-    exit();
 }
 
 //retrieve 25 most recent messages from the server
@@ -58,3 +58,4 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 </body>
 </html>
+
