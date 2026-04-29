@@ -15,7 +15,7 @@
 
 <h3> This is a list of programming languages that was learned and used during our time in Phoenix: </h3>
 
-<h2> Programming Languages</h2>
+<!-- <h2> Programming Languages</h2> -->
 <section class="boxed2">
     <h3 style="text-align:right;">HTML</h3>
     <img src = "html5.png" alt = "HTML" style="float:right;width:100px;height:100px;">
@@ -100,6 +100,3 @@ It can update and change both HTML and CSS. As such, it can allow for a user to 
 </html>
 
 -->
-
-</body>
-</html>
