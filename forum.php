@@ -3,7 +3,7 @@ $page_title = "Forum";
 include 'header.php';
 include 'db_connect.php';
 
-$still_open = true;//IMMEDIATELY CLOSE THIS IF USERS ARE MISUSING THE WEBSITE
+$still_open = false;//IMMEDIATELY CLOSE THIS IF USERS ARE MISUSING THE WEBSITE
 
 date_default_timezone_set('Asia/Manila');
 //check if a message was just sent
