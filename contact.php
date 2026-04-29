@@ -25,13 +25,13 @@
 <section class="forms">
 <form action = "inquire.php" method = "post" onsubmit = "return validate()" >
   <label for="fname">First name (required):</label>
-  <input type="text" id="fname" name="fname"> <p id="fnproblem" style="color:red;font-size:16px;margin:1px"></p>
+  <input type="text" id="fname" name="fname" required> <p id="fnproblem" style="color:red;font-size:16px;margin:1px"></p>
   <label for="lname">Last name (required):</label>
-  <input type="text" id="lname" name="lname"> <p id="lnproblem" style="color:red;font-size:16px;margin:1px"></p>
+  <input type="text" id="lname" name="lname" required> <p id="lnproblem" style="color:red;font-size:16px;margin:1px"></p>
   <label for="email">Email (required):</label>
-  <input type="email" id="email" name="email"> <p id="emproblem" style="color:red;font-size:16px;margin:1px"></p>
+  <input type="email" id="email" name="email" required> <p id="emproblem" style="color:red;font-size:16px;margin:1px"></p>
   <label for="question">Your inquiry (required):</label><br>
-  <textarea id="question" name="question" rows="8" cols="180"></textarea> <p id="quproblem" style="color:red;font-size:16px;margin:1px"></p> <br>
+  <textarea id="question" name="question" rows="8" cols="180" required></textarea> <p id="quproblem" style="color:red;font-size:16px;margin:1px"></p> <br>
   <input type="submit" value="Submit">
 </form>
 </section>
