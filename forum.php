@@ -40,9 +40,9 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 <section class="messageboard">
 <!-- display the 25 most recent messages with username and time stamp -->
 <?php while ($row = mysqli_fetch_assoc($fetched_data)) {?>
-<div class="stamp"> <?php echo $row['SentOn']; ?></div>
-<div class="messagesender"> <?php echo htmlspecialchars($row['Username']); ?></div>
-<div class="message"> <?php echo htmlspecialchars($row['Content']); ?></div>
+<span class="stamp"> <?php echo $row['SentOn']; ?></span>
+<span class="messagesender"> <?php echo htmlspecialchars($row['Username']); ?></span>
+<span class="message"> <?php echo htmlspecialchars($row['Content']); ?></span>
  <br>
 <?php } ?>
 
@@ -59,3 +59,4 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 </body>
 </html>
+
