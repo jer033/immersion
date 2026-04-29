@@ -17,7 +17,8 @@ The following pages are available:
 - logout.php
 
 TO BE DONE:
-- Chat room
+- Organize files
+- Question of the Day
 - Fix UI for different screens
 - PHP Prepared Statements
 - Finalize game features for booth showcase
