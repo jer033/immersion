@@ -59,6 +59,8 @@ if ($_SESSION['loggedin']) {
 <p style="font-size:16px;"> For JCA students and personnel: <i> You may use this page or the <a href="memory_booth.html">other</a> page.
 The difference is that this page has a save button and that scores on this page will reflect on the leaderboard <b>if you register an account and log in</b>. 
 However, if the WiFi is not very strong right now, it is recommended that you use the other page.</i> </p>
+
+<p style="font-size:16px;"> <i> As a reminder, the goal is to score 100 points. </i> </p>
 <?php } ?>
 </section>
 
@@ -241,3 +243,4 @@ score: # of correct words pressed
 
 </body>
 </html>
+
