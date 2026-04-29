@@ -3,6 +3,8 @@ $page_title = "Forum";
 include 'header.php';
 include 'db_connect.php';
 
+$still_open = false;//IMMEDIATELY CLOSE THIS IF USERS ARE MISUSING THE WEBSITE
+
 date_default_timezone_set('Asia/Manila');
 //check if a message was just sent
 if ($_SESSION['loggedin']) {
@@ -37,11 +39,16 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
     
 <h4 style="margin-top:3px;margin-bottom:3px;"> These are the 50 most recent messages sent to the forum. </h4>
 <h4 style="margin-top:3px;margin-bottom:3px;"> To send a message, you must be logged in. </h4>
+<h4 style="margin-top:3px;margin-bottom:3px;"> Reminder: All visitors can read your messages, so please avoid profanities or otherwise offensive content. 
+    The site moderator reserves the right to take down the page at any time.
+</h4>
 
+<?php if ($still_open) { ?>
 <section class="messageboard">
 <!-- display the 50 most recent messages with username and time stamp -->
-<?php while ($row = mysqli_fetch_assoc($fetched_data)) {?>
-<span class="stamp"> <?php echo $row['SentOn']; ?></span>
+<?php while ($row = mysqli_fetch_assoc($fetched_data)) {
+    $friendly_time = date("M j, g:i a", strtotime($row['SentOn'])); ?>
+<span class="stamp"> [<?php echo $friendly_time; ?>] </span>
 <span class="messagesender"> <?php echo htmlspecialchars($row['Username']); ?></span>
 <span class="message"> <?php echo htmlspecialchars($row['Content']); ?></span>
  <br>
@@ -53,12 +60,17 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
   <input type="submit" value="Send">
 </form>
 <?php } else { ?>
-<p> You must be logged in to send a message.
+<p> You must be logged in to send a message. </p>
 <?php } ?>
-
+<?php }  else {?>
+<section class="messageboard">
+<span class="message"> Due to inappropriate usage, the forum has been closed. </span>
+ <br>
 </section>
+<?php } ?>
 
 </body>
 </html>
+
 
 
