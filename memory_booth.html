@@ -23,6 +23,9 @@
 <p style="font-size:16px;"> Your goal is to reach a score of at least 100 points. Good luck! </p>
 <p style="font-size:16px;"> <i> This project was made using a combination of HTML, CSS, and JavaScript (JS). </i> </p>
 <p style="font-size:16px;"> <i> Visit the main site at <a href="index.php">Work Immersion Portfolio</a> </i> </p>
+<p style="font-size:16px;"> For JCA students and personnel: <i> You may use this page or the <a href="memory.php">other</a> page.
+The difference is that the other page has a save button and that scores on the other page will reflect on the leaderboard. 
+If the WiFi is strong right now, it is recommended that you use the other page.</i> </p>
 </section>
 
 <button id="winbutton">Goal: 100 points</button>
@@ -119,8 +122,7 @@ function runRound(given_button)
         updateScore();
         curr_high_score = Math.max(curr_high_score, counter);
         document.getElementById("hscore").innerText = curr_high_score;
-        if (counter==100)
-        {
+        if (curr_high_score>=100) {
             document.getElementById("winbutton").innerText = "YOU WIN! Thank you for playing. Please show this screen to the booth hosts. ";
         }
         let throwaway = 1;
@@ -180,3 +182,4 @@ score: # of correct words pressed
 
 </body>
 </html>
+
