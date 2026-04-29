@@ -57,3 +57,5 @@ Day 5:
 - 8AM to 9AM: Edited skills and learnings page
 - 9AM to 11AM: Created a message forum for logged in users
 - 11AM to 12NN: Presented website features to supervisor, reorganized files, and finalized game features for booth showcase
+- 1PM to 2PM: Began writing QOTD page
+- 2PM to 3PM: Held Thanksgiving Program
