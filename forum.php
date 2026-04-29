@@ -62,6 +62,7 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 <?php } else { ?>
 <p> You must be logged in to send a message. </p>
 <?php } ?>
+</section>
 <?php }  else {?>
 <section class="messageboard">
 <span class="message"> Due to inappropriate usage, the forum has been closed. </span>
@@ -71,6 +72,7 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 
 </body>
 </html>
+
 
 
 
