@@ -42,6 +42,14 @@ header {
     margin: 20px;
 }
 
+.messageboard {
+    background-color: antiquewhite;
+    border-style: solid;
+    border-color : rgb(232, 155, 62);
+    border-width : 8px;
+    margin: 12px;
+}
+
 .qnaq {
     border-style: double;
     border-color : rgb(232, 155, 62);
@@ -115,6 +123,21 @@ button.word {
 .navbar a:hover {
     background-color: #38e4f7;
     color: black;
+}
+
+.message {
+    color: black;
+    font-size: 12px;
+}
+
+.messagesender {
+    color: MidnightBlue;
+    font-size: 12px;
+}
+
+.stamp {
+    color: Cornsilk;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
