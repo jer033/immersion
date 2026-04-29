@@ -1,5 +1,5 @@
 <?php 
-  $page_title = "Skills and Learnings"; 
+  $page_title = "Programming Languages"; 
   include 'header.php'; 
 ?>
 
@@ -13,9 +13,9 @@
 </head>
 <body>
 
-<h3> Here is a list of skills that we learned at our time in Phoenix: </h3>
+<h3> This is a list of programming languages that was learned and used during our time in Phoenix: </h3>
 
-<h2> Programming Languages </h2>
+<h2> Programming Languages</h2>
 <section class="boxed2">
     <h3 style="text-align:right;">HTML</h3>
     <img src = "html5.png" alt = "HTML" style="float:right;width:100px;height:100px;">
@@ -54,8 +54,52 @@ It can update and change both HTML and CSS. As such, it can allow for a user to 
  <br>
  <br>
 
-
 </section>
+
+</body>
+</html>
+
+<!--
+
+<h2> Logo and Illustration Drawing (Sophia)</h2>
+<section class="boxed2">
+<p> In creating ebooks for young children, it is important to be able to draw accompanying illustrations. 
+    Illustrations help children learn from eBooks by boosting engagement, comprehension, and vocabulary levels.
+    Thus, it is important to be able to draw these illustrations using digital tools.
+</p>
+
+<p> Sophia took a course on how to use Adobe Illustrator and Lightroom.
+</p>
+</section>
+
+
+<h2> Attention to Detail (Tyler)</h2>
+<section class="boxed2">
+<p> It is important for databases to contain up-to-date and accurate information, especially when they pertain to personal or company data. 
+    Therefore, all detalis that are submitted must be cross-checked with a high level of attention to detail. 
+    Tyler got to experience this by comparing raw files with master files and checking for discrepancies. 
+    
+    As a practice of <b>your</b> attention to detail, one word in this paragraph has been intentionally misspelled. Can you identify it?
+</p>
+</section>
+
+<h2> Research (Johann)</h2>
+<section class="boxed2">
+<p> Before serving in the education sector of any community, it is important to research on certain laws and cultural practices that this community may observe.
+    Johann researched on the history of copyright law in the Philippines and cultural practices for teachers in Muslim communities.
+</p>
+
+<p> What have you been researching on recently?
+</p>
+</section>
+
+<h4> Disclaimer for JCA Admin: This website is NOT a substitute for the Google Sites that would be made containing the 
+    daily logs, reflections, and learnings of the students who went to Phoenix.  </h4>
+
+</body>
+</html>
+
+-->
 
 </body>
 </html>
