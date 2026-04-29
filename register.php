@@ -24,7 +24,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
   <input type="text" id="us" name="us" required>
   <span id="usreqs" style="font-size:16px;margin:1px">
     Your username must have at least 6 characters. </span>
-  <span> Please do not choose a username with profanities or otherwise inappropriate content. </span>
+  <span style="font-size:16px;margin:1px"> Please do not choose a username with profanities or otherwise inappropriate content. </span>
 
 <p id="usernametaken" style="visibility: <?php echo $show_taken_error ? 'visible' : 'hidden'; ?>; color:red; font-size:16px; margin:1px;"> 
     <br> This username has already been taken. Please choose another username.
