@@ -20,7 +20,6 @@ TO BE DONE:
 - Question of the Day
 - Fix UI for different screens
 - PHP Prepared Statements
-- Finalize game features for booth showcase
 
 
 DAILY LOGS
@@ -57,4 +56,4 @@ Day 4:
 Day 5:
 - 8AM to 9AM: Edited skills and learnings page
 - 9AM to 11AM: Created a message forum for logged in users
-- 11AM to 12NN: Presented website features to supervisor and reorganized files
+- 11AM to 12NN: Presented website features to supervisor, reorganized files, and finalized game features for booth showcase
