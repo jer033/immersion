@@ -39,7 +39,8 @@ sending and receiving cookies, and analyzing and encrypting data in the database
 <h3 style="text-align:left;">JavaScript</h3>
     <img src = "js.png" alt = "JS" style="float:left;width:250px;height:150px;margin-bottom:100px">
     <p> JS (JavaScript) is the programming language of the web. It can calculate, manipulate and validate data.
-It can update and change both HTML and CSS.
+It can update and change both HTML and CSS. As such, it can allow for a user to interact with a website on their session. For example, it is the technology behind the 
+<a href = "memory.php">memory game</a>.
  </p>
 
 <h3 style="text-align:right;">MySQL</h3>
