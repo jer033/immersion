@@ -19,6 +19,8 @@ The following pages are available:
 TO BE DONE:
 - Chat room
 - Fix UI for different screens
+- PHP Prepared Statements
+- Finalize game features for booth showcase
 
 
 DAILY LOGS
