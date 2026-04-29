@@ -19,9 +19,9 @@ if ($_SESSION['loggedin']) {
     }
 }
 
-//retrieve 25 most recent messages from the server
+//retrieve 50 most recent messages from the server
 $retrieve_command = "SELECT Username, Content, SentOn FROM (SELECT *
-FROM Forum ORDER BY MessageNo DESC LIMIT 25) AS subquery ORDER BY MessageNo ASC";
+FROM Forum ORDER BY MessageNo DESC LIMIT 50) AS subquery ORDER BY MessageNo ASC";
 $fetched_data = mysqli_query($conn, $retrieve_command);
 ?>
 
@@ -35,11 +35,11 @@ $fetched_data = mysqli_query($conn, $retrieve_command);
 </head>
 <body>
     
-<h4 style="margin-top:3px;margin-bottom:3px;"> These are the 25 most recent messages sent to the forum. </h4>
+<h4 style="margin-top:3px;margin-bottom:3px;"> These are the 50 most recent messages sent to the forum. </h4>
 <h4 style="margin-top:3px;margin-bottom:3px;"> To send a message, you must be logged in. </h4>
 
 <section class="messageboard">
-<!-- display the 25 most recent messages with username and time stamp -->
+<!-- display the 50 most recent messages with username and time stamp -->
 <?php while ($row = mysqli_fetch_assoc($fetched_data)) {?>
 <span class="stamp"> <?php echo $row['SentOn']; ?></span>
 <span class="messagesender"> <?php echo htmlspecialchars($row['Username']); ?></span>
