@@ -17,7 +17,6 @@
 <section class="boxed" style="background-color: #e4ff82">
 <p> Jerome is the developer of this website. For inquiries, please contact him at: </p>
 <p> Email: jante@student.jca.edu.ph </p>
-<p> Phone: (+63) 976 541 7793 </p>
 <p> Office Hours: 8AM - 5PM </p>
 </section>
 
