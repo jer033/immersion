@@ -17,7 +17,6 @@ The following pages are available:
 - logout.php
 
 TO BE DONE:
-- Organize files
 - Question of the Day
 - Fix UI for different screens
 - PHP Prepared Statements
@@ -58,3 +57,4 @@ Day 4:
 Day 5:
 - 8AM to 9AM: Edited skills and learnings page
 - 9AM to 11AM: Created a message forum for logged in users
+- 11AM to 12NN: Presented website features to supervisor and reorganized files
