@@ -60,4 +60,4 @@ Day 5:
 - 11AM to 12NN: Presented website features to supervisor, reorganized files, and finalized game features for booth showcase
 - 1PM to 2PM: Began writing QOTD page
 - 2PM to 3PM: Held Thanksgiving Program
-- 3PM to 5PM: Continued writing QOTD page, added a results page, and added warnings on inappropriate usernames and content.
+- 3PM to 5PM: Finished writing QOTD page, added a results page, and added warnings on inappropriate usernames and content.
