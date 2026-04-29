@@ -44,10 +44,10 @@
   title="Please use your @jca.edu.ph or @student.jca.edu.ph email address.">
   <fieldset style="border: none; padding: 0; margin-top: 10px;">
       <legend>Does pineapple belong on pizza?</legend>
-  <label for="yesppizza">YES</label>
   <input type="radio" id="yesppizza" name="ppizza" value="Yes" checked> <br>
-  <label for="noppizza">NO</label>
+  <label for="yesppizza">YES</label>
   <input type="radio" id="noppizza" name="ppizza" value="No">
+  <label for="noppizza">NO</label>
   </fieldset>
   <input type="submit" value="Submit">
 </form>
