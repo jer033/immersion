@@ -8,6 +8,7 @@ session_start();
   <a href="memory.php">Educational Game</a>
   <a href="leaderboard.php">Leaderboard</a>
   <a href="forum.php">Forum</a>
+  <a href="qotd.php">QOTD</a>
   <a href="contact.php">Contact</a>
   <a href="faq.php">FAQ</a>
   <?php if ((isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true && ($page_title != "Logout Successful"))||($page_title === "Login Successful")) { ?>
