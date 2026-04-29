@@ -1,6 +1,7 @@
 <?php 
   $page_title = "Question of the Day (QOTD)";
   include 'header.php'; 
+  include 'db_connect.php';
 
   $show_double_vote_warning = isset($_GET['error']) && $_GET['error'] == 'doublevote';
   $show_success_vote = isset($_GET['i']) && $_GET['i'] == 'success';
