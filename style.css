@@ -142,6 +142,9 @@ button.word {
 
 @media screen and (max-width: 768px) {
     
+    .header {
+        position: fixed; /* Makes it stick when scrolling */
+    }
     /* Scale down the massive headers */
     h1 {
         font-size: 32px;
