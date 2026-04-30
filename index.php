@@ -38,6 +38,11 @@ It is connected with partner companies including Sibs Publishing House, Phoenix 
 </p>
 </section>
 
+<h2> Alagang Mahalaga and Phoenix’s Mission and Vision </h2>
+  <section class = "boxed">
+    <p> We, the Phoenix Group of Companies, are the Philippines most trusted education solutions partner, providing superior innovative products, programs, and services to help schools transform students and society. With God’s grace and inspired by <b> Alagang Mahalaga </b> as our way of life, we commit to delivering Filipino-crafted resources and services for innovative teaching and effective learning toward global competitiveness in the digital age. </p>
+  </section>
+
 <h2> What do we do? </h2>
 <section class="boxed">
 <p> As interns, we worked at different departments best matched to our skills and talents. We were assigned to the following departments: </p>
